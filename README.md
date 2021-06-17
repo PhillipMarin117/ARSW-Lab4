@@ -64,7 +64,7 @@ El siguiente programa soporta HTML, JavaScrip y CSS usando una plantilla de Boot
 
 #### Acceso a CSS con Bootstrap (http://localhost:35000/bootstrap/index.html)
 
-![](img/Boot.PNG)
+![](img/Boots.PNG)
 
 #### Prueba de que se ejecuta en dos o mas ventanas/navegadores al mismo tiempo
 
