@@ -112,10 +112,17 @@ public class HttpServer implements Runnable {
         return new File(System.getProperty("user.dir") + "\\src\\main\\resources\\" + res); //"index.html"
     }
 
+    private static int getPort() {
+        if (System.getenv("PORT") != null) {
+            return Integer.parseInt(System.getenv("PORT"));
+        }
+        return 35000;
+    }
+
     public static void main(String[] args) {
         ExecutorService pool = null;
         try {
-            ServerSocket serverSocket = new ServerSocket(35000);
+            ServerSocket serverSocket = new ServerSocket(getPort());
             System.out.println("Listo para recibir ...");
             pool = Executors.newCachedThreadPool();
             while (true) {
