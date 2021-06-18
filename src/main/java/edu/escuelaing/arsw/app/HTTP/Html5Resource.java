@@ -26,8 +26,9 @@ public class Html5Resource {
         while ((line = reader.readLine()) != null) {
             cadena.append(line);
         }
-        out.println("HTTP/1.1 200 OK");
-        out.println("Content-Type: "+type);
+        System.out.println("Este es el type -.-.-.-.-.-.-.-.-.-. " + type);
+        out.println("HTTP/1.1 200 OK \r");
+        out.println("Content-Type: "+type +"\r");
         out.println();
         out.println(cadena);
 

@@ -20,9 +20,9 @@ public class HtmlResource {
             cadena.append(line);
         }
         //System.out.println("PASO POR EL WHILE");
-        out.println("HTTP/1.1 200 OK");
-        out.println("Content-Type: text/html");
-        out.println();
+        out.println("HTTP/1.1 200 OK \r");
+        out.println("Content-Type: text/html \r");
+        out.println("\r");
         out.println(cadena);
     }
 

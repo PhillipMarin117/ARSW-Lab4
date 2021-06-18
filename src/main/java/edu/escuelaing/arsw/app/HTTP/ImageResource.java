@@ -24,9 +24,9 @@ public class ImageResource {
         }else{
             BufferedImage image = ImageIO.read(new File ((System.getProperty("user.dir")+ "/src/main/resources/img/"+ res)));
             //System.out.println("PASA EL PRIMER LINEA");
-            out.println("HTTP/1.1 200 OK");
-            out.println("Content-Type: image/PNG");
-            out.println();
+            out.println("HTTP/1.1 200 OK \r");
+            out.println("Content-Type: image/PNG \r");
+            out.println("\r");
             ImageIO.write(image, "PNG", clientSocket);
         }
     }
