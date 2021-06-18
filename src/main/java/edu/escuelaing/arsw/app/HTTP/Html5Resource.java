@@ -15,23 +15,23 @@ public class Html5Resource {
      * @param out
      * @param archivoEncontrado
      * @param type
-     * @throws IOException 
+     * @throws IOException
      */
-    public void writeText(OutputStream clientSocket, PrintWriter out, File archivoEncontrado,String type) throws IOException {
+    public void writeText(OutputStream clientSocket, PrintWriter out, File archivoEncontrado, String type)
+            throws IOException {
         StringBuilder cadena = new StringBuilder();
         String line = null;
         FileReader prueba = new FileReader(archivoEncontrado);
         BufferedReader reader = new BufferedReader(prueba);
-
+        String outputLine = "";
         while ((line = reader.readLine()) != null) {
             cadena.append(line);
         }
-        System.out.println("Este es el type -.-.-.-.-.-.-.-.-.-. " + type);
-        out.println("HTTP/1.1 200 OK \r");
-        out.println("Content-Type: "+type +"\r");
-        out.println();
-        out.println(cadena);
-
+        outputLine += "HTTP/1.1 200 OK \r\n"
+                + "Content-Type: " + type
+                + "\r\n\r\n"
+                + cadena;
+        out.print(outputLine);
     }
-
 }
+
