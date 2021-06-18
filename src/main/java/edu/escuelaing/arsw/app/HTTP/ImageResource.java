@@ -19,10 +19,10 @@ public class ImageResource {
         }
 
         if(res.substring(5, 7).equals("bs")){
-            BufferedImage image = ImageIO.read(new File("C:\\Users\\Felipe\\Desktop\\Trabajos Universidad\\Inter ARSW\\ARWS\\ARSW-Lab4\\src\\main\\resource\\bootstrap\\" + res));
+            BufferedImage image = ImageIO.read(new File((System.getProperty("user.dir")+ "/src/main/resource/bootstrap/" + res)));
 
         }else{
-            BufferedImage image = ImageIO.read(new File("C:\\Users\\Felipe\\Desktop\\Trabajos Universidad\\Inter ARSW\\ARWS\\ARSW-Lab4\\src\\main\\resources\\img\\"+res));
+            BufferedImage image = ImageIO.read(new File ((System.getProperty("user.dir")+ "/src/main/resources/img/"+ res)));
             //System.out.println("PASA EL PRIMER LINEA");
             out.println("HTTP/1.1 200 OK");
             out.println("Content-Type: image/PNG");
