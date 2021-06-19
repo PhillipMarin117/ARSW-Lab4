@@ -24,6 +24,7 @@ Para ejecutar con éxito este programa se requiere de los siguientes programas i
 java -vesion
 git --vesion
 mvn -version
+heroku --version
 ```
 
 Le debería aparecer de la siguiente manera
@@ -31,6 +32,7 @@ Le debería aparecer de la siguiente manera
 java version: "1.8.0_171"
 git version: 2.19.1.windows.1
 Apache Maven version: 3.6.3
+heroku/7.53.0
 ```
 Una vez compliado el repositorio completo se encuentra en posibilidad de probar los siguientes ejercicios:
 
@@ -54,11 +56,11 @@ El siguiente programa soporta HTML, JavaScrip y CSS usando una plantilla de Boot
 
 ![](img/HTML.PNG)
 
-#### Acceso a imagen PNG (http://localhost:35000/Psycho.png)
+#### Acceso a imagen PNG (http://localhost:35000/img/Psycho.png)
 
 ![](img/Psycho.PNG)
 
-#### Acceso a imagen JPG (http://localhost:35000/Battler.jpg)
+#### Acceso a imagen JPG (http://localhost:35000/img/Battler.jpg)
 
 ![](img/Battler.PNG)
 
@@ -99,3 +101,9 @@ La siguiente imagen muestra los diagramas de clases contenidos en sus respectivo
 ## Licencia
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
+## Enlace al sistema de integración continua
+
+_A continuación se presenta el link:_
+[![CircleCI](https://circleci.com/gh/PhillipMarin117/ARSW-Lab4.svg?style=svg)](https://circleci.com/gh/PhillipMarin117/ARSW-Lab4)
